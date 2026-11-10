@@ -4,11 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Application</title>
+    <title>Socket.IO Chatroom</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <h1>Chatting..</h1>
+    <div id="chat-container">
+        <div id="join-screen">
+            <h2>Enter Chatroom</h2>
+            <input type="text" id="username-input" placeholder="Choose a username..." autocomplete="off">
+            <button id="join-btn">Join Chat</button>
+        </div>
+
+        <div id="chat-screen" class="hidden">
+            <div id="messages-log"></div>
+            <div id="input-bar">
+                <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load the internal auto-generated Socket.IO client dependency library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
 </body>
 
 </html>
