@@ -4,7 +4,7 @@
   "description": "A lightweight, high-performance WebSocket server boilerplate for Node.js built on top of the robust `ws` library. Designed as a foundational block for real-time applications, event streaming, or live communication microservices.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
